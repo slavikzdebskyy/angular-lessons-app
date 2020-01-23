@@ -1,0 +1,36 @@
+<header>
+
+  <button
+    class="btn"
+    (click)="toglleClassName()"
+  >
+    Click
+  </button>
+
+  <!-- <div
+    class="rectangle"
+    [ngClass]="className"
+    [ngStyle]="style"
+  >
+  </div> -->
+
+  <div
+    class="rectangle"
+    *ngIf="isVisible"
+  >
+  </div>
+
+
+  <!-- <div
+    class="rectangle"
+    [ngClass]="{'hidden': !isVisible}"
+  >
+  </div> -->
+
+  <!-- <div
+    class="rectangle"
+    [class.hidden]="!isVisible"
+  >
+  </div> -->
+
+</header>

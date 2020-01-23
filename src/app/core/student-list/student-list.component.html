@@ -1,0 +1,25 @@
+<!-- <ul>
+  <li>
+    {{ students[0].name }} {{students[0].lastName}} {{students[0].age}}
+  </li>
+</ul> -->
+<!-- <ul>
+  <li
+    *ngFor="let student of students"
+    class="list-item"
+    (click)="selectStutent(student.id)"
+  >
+    {{ getFullName(student) }}
+  </li
+  >
+</ul> -->
+
+<mat-list role="list">
+  <mat-list-item
+    *ngFor="let student of students"
+    role="listitem"
+    (click)="selectStutent(student.id)"
+  >
+    {{ getFullName(student) }}
+  </mat-list-item>
+</mat-list>

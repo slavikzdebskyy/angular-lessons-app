@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #000000;
+  background-color: aquamarine;
+}
+
+.rectangle {
+  width: 100px;
+  height: 50px;
+  border: 2px solid red;
+}
+
+.red {
+  background-color: red;
+}
+
+.hidden {
+  visibility: hidden;
+}
