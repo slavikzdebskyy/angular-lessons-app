@@ -16,25 +16,47 @@ export class WrapperComponent implements OnInit {
         id: 1,
         name: 'Vasul',
         lastName: 'Petrenko',
-        age: 29
+        age: 29,
+        adress: {
+          country: 'Ukraine',
+          city: 'Lviv',
+          street: 'Naukova',
+          home: '2a'
+        }
       },
       {
         id: 2,
         name: 'Petro',
         lastName: 'Stepanenko',
-        age: 31
+        age: 31,
+        adress: {
+          country: 'Ukraine',
+          city: 'Kharkiv',
+          street: 'Lenina',
+          home: '22b'
+        }
       },
       {
         id: 3,
         name: 'Ivan',
         lastName: 'Ivanenko',
-        age: 35
+        age: 35,
+        adress: {
+          country: 'Poland',
+          city: 'Warshaw',
+          street: 'Naukova',
+          home: '123'
+        }
       },
       {
         id: 4,
         name: 'Anna',
         lastName: 'Isaenko',
-        age: 22
+        age: 22,
+        adress: {
+          country: 'Germany',
+          city: 'Berlin',
+        }
       }
     ];
 
@@ -53,5 +75,6 @@ export class WrapperComponent implements OnInit {
   public getFullName(student: Student): string {
     return `${student.name} ${student.lastName} ${student.age}`;
   }
+
 
 }

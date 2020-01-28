@@ -6,16 +6,20 @@ import { StudentListComponent } from './student-list/student-list.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
 import { MatListModule } from '@angular/material/list';
 import { MatChipsModule } from '@angular/material/chips';
+import { ContainerComponent } from './container/container.component';
+import { TemplateExapleComponent } from './template-exaple/template-exaple.component';
 
 
 const COMPONENTS: any = [
   HeaderComponent,
   StudentListComponent,
   WrapperComponent,
+  ContainerComponent,
+  TemplateExapleComponent
 ];
 
 @NgModule({
-  declarations: [...COMPONENTS],
+  declarations: [...COMPONENTS ],
   imports: [
     CommonModule,
     SharedModule,

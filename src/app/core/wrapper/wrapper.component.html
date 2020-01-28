@@ -1,21 +1,38 @@
 <app-student-list
   [students]="students"
   (selectedStudent)="setSelectedStudent($event)">
-</app-student-list
->
-<!--
+
+  <div
+    *ngIf="selectedStudent?.adress"
+    class="info">
+    <mat-chip
+      *ngIf="selectedStudent"
+      color="primary" selected>
+      {{ getFullName(selectedStudent) }}
+    </mat-chip>
+    <mat-list role="list">
+    <mat-list-item role="listitem">
+      Country: {{selectedStudent.adress.country}}
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      City: {{selectedStudent.adress.city}}
+    </mat-list-item>
+    <mat-list-item role="listitem" *ngIf="selectedStudent.adress?.street">
+      Street: {{selectedStudent.adress.street}}
+    </mat-list-item>
+    <mat-list-item role="listitem" *ngIf="selectedStudent?.adress?.home">
+      Home: {{selectedStudent.adress.home}}
+    </mat-list-item>
+
+    </mat-list>
+
+  </div>
+</app-student-list>
+
 <span
   *ngIf="selectedStudent"
   class="selected-std">
 
-</span> -->
-
-<mat-chip-list aria-label="Fish selection">
-  <mat-chip
-  *ngIf="selectedStudent"
-  color="primary" selected>
-  {{ getFullName(selectedStudent) }}
- </mat-chip>
-</mat-chip-list>
+</span>
 
 

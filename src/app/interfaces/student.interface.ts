@@ -3,4 +3,10 @@ export interface Student {
   name: string;
   lastName: string;
   age: number;
+  adress?: {
+    country: string;
+    city: string;
+    street?: string;
+    home?: string;
+  };
 }
